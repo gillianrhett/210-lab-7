@@ -1,19 +1,23 @@
 // COMSC-210 | Lab 7 | Gillian Rhett
 #include <iostream>
 #include <string>
+#include <vector>
 using namespace std;
 
-string* reverseArray(string*, int);
+vector<string>* reverseArray(vector<string>, int);
+void displayArray(vector<string>, int);
 int* reverseIntArray(int*, int); // TESTING
-void displayArray(string*, int);
 void displayIntArray(int*, int); // TESTING
 
-const int arrSize = 6;
+const int arrSize = 5;
 
 int main() {
     // create a dynamic array of strings
     // problem: the size of strings varies
-    // I could use a vector?
+    
+    // trying it with a vector
+    vector<string> myStrs {"alpha", "beta", "gamma", "delta", "epsilon"};
+
 
     /*
     cout << "Original array: ";
@@ -27,26 +31,17 @@ int main() {
     return 0;
 }
 
-string* reverseArray(string* arr, int size) {
-// reverse the elements in the given array
-//  and return a pointer to this reversed array
-    string* ptr;
-    ptr = arr;
+vector<string>* reverseArray(vector<string> vectIn, int size) {
+    vector<string>* ptr = &vectIn;
     string temp;
-    for(int i = 0; i < size / 2; ++i) {
-        temp = *(ptr + i);
-        *(ptr + i) = *(ptr + ((size - i) - 1));
-        *(ptr + ((size - i) - 1)) = temp;
+    for(int i = 0; i < arrSize; ++i) {
+
     }
     return ptr;
 }
 
-void displayArray(string* arr, int size) {
-// show the array elements in order on one line
-    for(int i = 0; i < size; ++i) {
-        cout << *(arr + i) << " ";
-    }
-    cout << endl;
+void displayArray(vector<string>, int) {
+
 }
 
 // TESTING making sure my functions work
