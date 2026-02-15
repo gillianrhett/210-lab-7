@@ -7,9 +7,26 @@ using namespace std;
 string* reverseArray(string*, int);
 void displayArray(string*, int);
 
+const int arrSize = 5;
+
 int main() {
-    
+// create a dynamic array of strings and reverse it
+    string* strArr = new string[arrSize];
+
     return 0;
+}
+
+string* reverseArray(string* arr, int size) {
+// creates a new array in reverse order from the given array
+//   and returns a pointer to the new array
+//   this new array will need to be deallocated by the caller
+    string* ptr = nullptr;
+
+    return ptr;
+}
+
+void displayArray(string* arr, int size) {
+
 }
 
 /*
