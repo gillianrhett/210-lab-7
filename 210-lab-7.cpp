@@ -15,19 +15,15 @@ int main() {
     // problem: the size of strings varies
     // I could use a vector?
 
-    // TESTING
-    int* intArr = new int {arrSize};
-    *(intArr + 0) = 10;
-    *(intArr + 1) = 20;
-    *(intArr + 2) = 30;
-    *(intArr + 3) = 40;
-    *(intArr + 4) = 50;
-    *(intArr + 5) = 60;
+    /*
     cout << "Original array: ";
-    displayIntArray(intArr, arrSize);
+    displayArray(strArr, arrSize);
     cout << "Reversed array: ";
-    displayIntArray(reverseIntArray(intArr, arrSize), arrSize);
+    displayArray(reverseArray(strArr, arrSize), arrSize);
     
+    delete strArr;    
+    strArr = nullptr;
+    */
     return 0;
 }
 
