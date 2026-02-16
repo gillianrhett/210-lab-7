@@ -20,6 +20,7 @@ int main() {
     *(strArr + 3) = "delta";
     *(strArr + 4) = "epsilon";
     
+    // show this array and the reversed version
     cout << "Original array: ";
     displayArray(strArr, arrSize);
     string* revStrArr = reverseArray(strArr, arrSize);
@@ -46,6 +47,7 @@ string* reverseArray(string* arr, int size) {
 }
 
 void displayArray(string* arr, int size) {
+// displays the elements from the array in one line
     for(int i = 0; i < size; ++i)
         cout << *(arr + i) << " ";
     cout << endl;
